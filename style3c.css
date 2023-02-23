@@ -1,0 +1,36 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: gray;
+    text-align: right;
+}
+
+header nav a{
+    color: white;
+    margin-left: auto;
+    text-decoration: none;
+
+}
+div{
+    width:25% ;
+    padding:3%; 
+    border:rosybrown;
+    margin-left: 30%;
+    border-color: rgb(231, 232, 232);
+}
+
+form label, form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    
+    
+  }
+  
+  form input[type="text"], form input[type="email"], form textarea {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }

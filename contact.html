@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with us</title>
+    <link rel="stylesheet" type="text/css" href="style3c.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+          <a href="about.html">About</a>
+          <a href="index.html"><i class="fas fa-home"></i></a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <div>
+        <section>
+            <h1 style="text-align: center;">Contact</h1>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+              <label for="message">Message:</label>
+              <textarea rows="3" cols="20" id="message" name="message" maxlength="100" oninput="updateCharacterCount()"></textarea>
+              <p id="character-count">100 characters remaining</p>
+              
+              <script>
+              function updateCharacterCount() {
+                const message = document.getElementById('message');
+                const characterCount = document.getElementById('character-count');
+                const remaining = 100 - message.value.length;
+                characterCount.textContent = remaining + ' characters remaining';
+              }
+              </script>
+              <button class="btn btn-primary">Submit</button>
+      
+            </form>
+          </section>
+        </div>
+      </main>
+</body>
+</html>
